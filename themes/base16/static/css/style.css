@@ -1,6 +1,5 @@
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 /* Base16 Eighties Colorscheme by Chris Kempson (http://chriskempson.com) */
 
@@ -67,7 +66,6 @@ article.single section,
 }
 
 header, footer {
-  background-color: #393939;
   padding-top: 16px;
   padding-top: 1rem;
   padding-bottom: 16px;
@@ -109,10 +107,11 @@ footer {
 /* Typography */
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -184,10 +183,21 @@ footer a {
 }
 
 .homepage h1.site-title {
-  margin: 0;
+  margin: 80px 0 80px 0;
   text-align: center;
-  font-size: 10em;
+  font-size: 3.5em;
   color: #66cccc;
+}
+
+.homepage h1.site-title span:first-child {
+  background-color: black;
+  position: relative;
+  z-index: 2;
+}
+.homepage h1.site-title span:last-child {
+  position: relative;
+  z-index: 1;
+  margin-left: -11px;
 }
 
 @media (max-width: 52em) {
@@ -362,7 +372,6 @@ article.single figure {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   padding: 1em;
-  background-color: #393939;
 }
 
 @media (max-width: 52em) {
