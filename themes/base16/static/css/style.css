@@ -182,22 +182,31 @@ footer a {
   }
 }
 
-.homepage h1.site-title {
-  margin: 80px 0 80px 0;
-  text-align: center;
+header h1.site-title {
+  margin: 20px 0 0 0;
+  /*text-align: center;*/
   font-size: 3.5em;
   color: #66cccc;
 }
+header .sub-site-title {
+  /*text-align: center;*/
+  font-size: 13.5px;
+}
 
-.homepage h1.site-title span:first-child {
+header h1.site-title span:first-child {
   background-color: black;
   position: relative;
   z-index: 2;
 }
-.homepage h1.site-title span:last-child {
+header h1.site-title span:last-child {
   position: relative;
   z-index: 1;
   margin-left: -11px;
+}
+
+header .site-title a, header .site-title a:visited {
+  text-decoration: none;
+
 }
 
 @media (max-width: 52em) {
@@ -240,6 +249,22 @@ footer a {
 .homepage .tag {
   margin-right: 2em;
 }
+.feature .about {
+  text-align: center;
+  margin: 80px 0 80px 0;
+
+
+}
+.feature .github {
+  margin: 80px 0 80px 0;
+  text-align: center;
+}
+
+.feature .github a {
+  font-size: 100px;
+  color: white;
+}
+
 
 /* Post List Layout */
 
